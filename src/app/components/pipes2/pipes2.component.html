@@ -1,1 +1,23 @@
-<p>pipes2 works!</p>
+
+<div>
+  <H3>CURRENCY PIPES</H3>
+  <label for="ndato">Valor:</label>
+  <input name="ndato" [(ngModel)]="saldo">
+
+  <select [(ngModel)]="moneda">
+    <option value="default">--Seleccione el tipo de moneda--</option>
+    <option value="USD">Dolares (USD)</option>
+    <option value="EUR">Euros (EUR)</option>
+  </select>
+
+  <div>
+    <span *ngIf="moneda == 'default'"> Seleccione un tipo para mostrar </span>
+    <span *ngIf="moneda == 'USD'"> {{ saldo | monedas }} </span>
+    <span *ngIf="moneda == 'EUR'"> {{saldo | euros}} </span>
+  </div>
+</div>
+
+
+
+
+

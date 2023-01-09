@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipes1.component.css']
 })
 export class Pipes1Component {
-
+  texto!: string
 }
