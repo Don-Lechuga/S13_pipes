@@ -20,5 +20,12 @@ import { EurosPipe } from './euros.pipe';
     CommonModule,
     FormsModule
   ],
+  exports: [
+    Pipes1Component,
+    Pipes2Component,
+    IndexComponent,
+    MonedasPipe,
+    EurosPipe
+  ],
 })
 export class ComponentsModule { }
